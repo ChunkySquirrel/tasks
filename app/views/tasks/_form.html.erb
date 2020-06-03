@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <%= bootstrap_form_with(model: @task, local: true, layout: :horizontal,
                 label_col: "col-sm-2", control_col: "col-sm-10") do |f| %>
   <%= f.alert_message "Please fix the errors below", error_summary:false %>
@@ -9,7 +9,7 @@
   <%= f.primary @task.persisted? ? "Update task" : "Create task" %>
 
   <% end %>
-=======
+
 <%= form_with(model: task, local: true) do |form| %>
   <% if task.errors.any? %>
     <div id="error_explanation">
@@ -41,5 +41,5 @@
   <div class="actions">
     <%= form.submit %>
   </div>
->>>>>>> c2670d2b8950f5d246f872278be627777ba05d49
+
 <% end %>

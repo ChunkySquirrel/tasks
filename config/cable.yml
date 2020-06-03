@@ -7,8 +7,5 @@ test:
 production:
   adapter: redis
   url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
-<<<<<<< HEAD
   channel_prefix: todoauth_production
-=======
   channel_prefix: todo_production
->>>>>>> c2670d2b8950f5d246f872278be627777ba05d49

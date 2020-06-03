@@ -1,7 +1,7 @@
 require "application_system_test_case"
 
 class TasksTest < ApplicationSystemTestCase
-<<<<<<< HEAD
+
   test "index page shows all tasks" do
     user = login_user
     task1 = FactoryBot.create :task, user: user
@@ -11,7 +11,7 @@ class TasksTest < ApplicationSystemTestCase
     visit tasks_path
     assert_text task1.name
     assert_text task2.name
-=======
+
   setup do
     @task = tasks(:one)
   end
@@ -54,6 +54,6 @@ class TasksTest < ApplicationSystemTestCase
     end
 
     assert_text "Task was successfully destroyed"
->>>>>>> c2670d2b8950f5d246f872278be627777ba05d49
+
   end
 end

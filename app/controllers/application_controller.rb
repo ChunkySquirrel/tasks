@@ -1,5 +1,4 @@
 class ApplicationController < ActionController::Base
-<<<<<<< HEAD
 
   private
 
@@ -24,6 +23,5 @@ class ApplicationController < ActionController::Base
 
   helper_method :current_user
 
-=======
->>>>>>> c2670d2b8950f5d246f872278be627777ba05d49
+
 end

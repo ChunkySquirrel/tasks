@@ -1,5 +1,4 @@
 class TasksController < ApplicationController
-<<<<<<< HEAD
   before_action :authenticate
   before_action :load_task, except: [:index, :new, :create]
 
@@ -7,7 +6,7 @@ class TasksController < ApplicationController
       @tasks = current_user.tasks
   end
 
-=======
+
   before_action :set_task, only: [:show, :edit, :update, :destroy]
 
   # GET /tasks
@@ -22,12 +21,10 @@ class TasksController < ApplicationController
   end
 
   # GET /tasks/new
->>>>>>> c2670d2b8950f5d246f872278be627777ba05d49
   def new
     @task = Task.new
   end
 
-<<<<<<< HEAD
   def create
     @task = Task.new task_params
     @task.user = current_user
@@ -67,7 +64,7 @@ class TasksController < ApplicationController
   def task_params
     params.require(:task).permit(:name,:due_date,:priority)
   end
-=======
+
   # GET /tasks/1/edit
   def edit
   end
@@ -122,5 +119,5 @@ class TasksController < ApplicationController
     def task_params
       params.require(:task).permit(:title, :due_date, :priority)
     end
->>>>>>> c2670d2b8950f5d246f872278be627777ba05d49
+
 end
