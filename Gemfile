@@ -21,18 +21,11 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-<<<<<<< HEAD
 gem "bootstrap_form", ">= 4.2.0"
 gem 'bcrypt', '~> 3.1.7'
 gem "omniauth-github"
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
-=======
-
-# Use Active Storage variant
-# gem 'image_processing', '~> 1.2'
-
->>>>>>> c2670d2b8950f5d246f872278be627777ba05d49
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
@@ -48,28 +41,19 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-<<<<<<< HEAD
   gem 'guard'
   gem 'guard-minitest'
 end
 
 group :test do
 
-=======
-end
-
-group :test do
->>>>>>> c2670d2b8950f5d246f872278be627777ba05d49
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
-<<<<<<< HEAD
   gem 'minitest-reporters'
   gem 'factory_bot_rails'
-=======
->>>>>>> c2670d2b8950f5d246f872278be627777ba05d49
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
