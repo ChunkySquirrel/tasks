@@ -1,0 +1,6 @@
+<div id="note_<%= note.id %>" class="note">
+  <p><strong>Title:</strong> <%= link_to_unless_current note.title, task_note_path(@task,note) %></p>
+  <p><%= note.body %></p>
+  <%= link_to "Edit", edit_task_note_path(@task,note) %> |
+  <%= link_to "Delete", task_note_path(@task,note), method: :delete, data: {confirm: "Are you sure"} %>
+</div>

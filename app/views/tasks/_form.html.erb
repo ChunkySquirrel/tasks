@@ -1,0 +1,11 @@
+<%= bootstrap_form_with(model: @task, local: true, layout: :horizontal,
+                label_col: "col-sm-2", control_col: "col-sm-10") do |f| %>
+  <%= f.alert_message "Please fix the errors below", error_summary:false %>
+  <%= f.text_field :name %>
+  <%= f.text_field :due_date %>
+  <%= f.number_field :priority%>
+  <%= f.form_group do %>
+  <%= f.primary @task.persisted? ? "Update task" : "Create task" %>
+
+  <% end %>
+<% end %>

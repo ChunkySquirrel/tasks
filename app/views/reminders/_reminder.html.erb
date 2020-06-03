@@ -1,0 +1,4 @@
+<div id="reminder_<%= reminder.id %>" class="reminder">
+  <p><strong>TItle:</strong> <%= link_to_unless_current reminder.title, reminder %></p>
+  <p><%= reminder.body %></p>
+</div>

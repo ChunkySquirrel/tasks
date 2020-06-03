@@ -1,0 +1,7 @@
+<% title @note.title %>
+
+<%= render @note %>
+
+<%= link_to "Edit", edit_task_note_path(@task,@note) %> |
+<%= link_to "Delete", task_note_path(@task,@note), method: :delete, data: {confirm: "Are you sure"} %> |
+<%= link_to "All Notes", task_notes_path(@task) %>

@@ -1,0 +1,13 @@
+<% title "New reminder" %>
+
+<%= bootstrap_form_with(model: @reminder, local: true, layout: :horizontal,
+                label_col: "colm-sm-2", control_col: "col-sm-10") do |f| %>
+  <%= f.alert_message "Please fix the errors below." error_summary: false %>
+  <%= f.text_field :title %>
+  <%= f.text_area :body %>
+  <%= f.form_group do %>
+    <%= f.primary @reminder.persisted? ? "Update Reminder" : "Create Reminder" %>
+  <%= end %>
+<% end %>
+
+<%= link_to "Cancel", reminders_path, class: "btn btn-secondary" %>
