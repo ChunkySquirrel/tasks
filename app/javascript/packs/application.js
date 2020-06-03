@@ -8,6 +8,7 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
+<<<<<<< HEAD
 import 'bootstrap'
 import './src/application.scss'
 
@@ -17,6 +18,8 @@ document.addEventListener("turbolinks:load", () => {
   $('[data-toggle = "popover"]').popover()
 
 })
+=======
+>>>>>>> c2670d2b8950f5d246f872278be627777ba05d49
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)

@@ -1,6 +1,24 @@
+<<<<<<< HEAD
 <div id="task_<%=task.id%>" class="task">
   <p><strong>Name:</strong> <%= link_to_unless_current task.name, task%></p>
   <p><strong>Due date:</strong> <%= task.due_date %></p>
   <p><strong>Priority:</strong> <%= task.priority %></p>
 
+=======
+<div class="task">
+  <p>
+    <strong>Title:</strong>
+    <%= link_to_unless_current task.title, task %>
+  </p>
+
+  <p>
+    <strong>Due date:</strong>
+    <%= task.due_date %>
+  </p>
+
+  <p>
+    <strong>Priority:</strong>
+    <%= task.priority %>
+  </p>
+>>>>>>> c2670d2b8950f5d246f872278be627777ba05d49
 </div>

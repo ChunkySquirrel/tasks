@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <% title "Task" %>
 
 <%= render @task %>
@@ -14,3 +15,13 @@
 <%= render 'notes/form' %>
 
 <%= link_to "New Note", new_task_note_path(@task), class: "btn btn-primary" %>
+=======
+<p id="notice"><%= notice %></p>
+
+
+<%= render @task %>
+
+<%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Delete', task_path(@task), method: :delete, data: {confirm: "Are you sure?"} %> |
+<%= link_to 'Back', tasks_path %>
+>>>>>>> c2670d2b8950f5d246f872278be627777ba05d49

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
 
   get "signup" => 'users#new'
   get "login" => 'sessions#new'
@@ -16,5 +17,9 @@ end
 
   root to: 'home#index'
   get "about" => 'home#about'
+=======
+  resources :tasks
+  root to: 'tasks#index'
+>>>>>>> c2670d2b8950f5d246f872278be627777ba05d49
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
